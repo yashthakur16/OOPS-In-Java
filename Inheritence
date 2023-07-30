@@ -1,0 +1,48 @@
+class Shape
+{
+    int height=5;
+    int base=10;
+    public void printinfo()
+    {
+        System.out.print("The area of ");
+    }
+}
+
+class Triangle extends Shape
+{
+    int area=(height*base)/2;
+    public void printinfo()
+    {
+        System.out.print("Triangle is "+this.area);
+    }
+}
+
+class Rectangle extends Shape
+{
+    int area=(height*base);
+    public void printinfo()
+    {
+        System.out.print("Rectangle is "+this.area);
+    }
+}
+
+public class Inheritence 
+{
+    public static void main(String [] args)
+    {
+
+    Shape s =new Shape();
+    Triangle t =new Triangle();
+    Rectangle r =new Rectangle();
+
+    s.printinfo();
+    t.printinfo();
+
+    System.out.println();
+
+    s.printinfo();
+    r.printinfo();
+
+
+    }
+}
