@@ -1,0 +1,39 @@
+
+abstract class Animal
+{
+    public void walk()
+    {
+        System.out.println("Animal can walk");
+    }
+}
+
+class Horse extends Animal
+{
+    private String name="Horse";
+
+    String getdata()
+    {
+        String name=this.name;
+        return name;
+    }
+
+    void setdata(String n)
+    {
+        this.name=n;
+    }
+
+}
+
+
+public class Specifiers 
+{
+    public static void main(String [] args)
+    {
+        Horse h= new Horse();
+        h.walk();
+        System.out.println(h.getdata()) ;
+        h.setdata("Deer");
+        System.out.println(h.getdata()) ;
+
+    }
+}
